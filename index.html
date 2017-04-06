@@ -11,47 +11,264 @@
     </head>
     <body>
         <header>
-            <div>
-                <section>
+            <div class = "top">
+                <div id = "title">
                     <!-- for title+picture -->
-                </section>
-                <section>
+                </div>
+                <div id = "logo">
                     <!-- for logo -->
-                </section>
-                <section>
+                </div>
+                <div id = "dateTime">
                     <!-- for date/time -->
-                </section>
+                </div>
             </div>
-            <nav>
+        <div class = "navcon">
+            <nav class = "nav">
                 <!-- This will be for links to other site pages (home, preferences, about, login/logout) -->
+                <a href = "index.html">Home</a>
+                <a href = "about.html">About</a>
+                <a href = "preferences.html">Preferences</a>
+                <a id = "loginout" href = "loginout.php">Login/Logout</a>
             </nav>
+        </div>
         </header>
-        <main>
-            <div>
-                    <!-- for search bar/button -->
+        <main class = "main">
+            <div id = "search">
+                   <p><label for="search">Input 1-5 NYSE stock tickers:</label> <input type="text" name = "search" size="50">
+                       <input type="submit" value = "Search"></p> <!-- for search bar/button -->
             </div>
-            <div>
-                <section>
+            <div class = "left">
+                <div id = "newsFeed">
                     <!-- for News Feed -->
-                </section>
-                <section>
+                   <p>The news feed and all results will go here.</p>
+                    <p> It will show the top results for your stocks.</p>
+                </div>
+                <div id = "finance">
                     <!-- for Finance Metrics -->
-                </section>
+                    <table id = "metricTable">
+                        <tr id = "tableTitle">
+                            <td>
+                            Stock
+                            </td>
+                            <td>
+                            Current
+                            </td>
+                            <td>
+                            Open
+                            </td>
+                            <td>
+                            High
+                            </td>
+                            <td>
+                            Low
+                            </td>
+                            <td>
+                            52 High
+                            </td>
+                            <td>
+                            52 Low
+                            </td>
+                            <td>
+                            Volume
+                            </td>
+                            <td>
+                            Avg Market Cap
+                            </td>
+                            <td>
+                            Market Cap
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                             <td>
+                            1
+                            </td>
+                            <td>
+                            1
+                            </td>
+                        </tr>         
+                    </table>
+                </div>
             </div>
-            <aside>
-                <div>
+            <aside class = "right">
+                <div id = "facebook">
                     <!-- for Facebook Like -->
+                    <p>Facebook Like</p>
+                    <p>Button Here</p>
                 </div>
-                <div>
+                <div id = "twitter">
                     <!-- for Twitter Feed -->
+                    <p>This is for the Twitter Feed</p>
+                    <p>This is for the Twitter Feed</p>
+                    <p>This is for the Twitter Feed</p>
+                    <p>This is for the Twitter Feed</p>
+                    <p>This is for the Twitter Feed</p>
+                    <p>This is for the Twitter Feed</p>
+                    <p>This is for the Twitter Feed</p>
                 </div>
-                <div>
-                    <!-- potential ad space? -->
+                <div id = "ad">
+                    <p>AD SPACE???</p>
+                    <p>AD SPACE???</p>
+                    <p>AD SPACE???</p>
+                    <p>AD SPACE???</p>
+                    <p>AD SPACE???</p>
                 </div>
             </aside>        
         </main>
         <footer>
-            <!-- contact us info, Special thanks to yahoo finance, etc.-->
+            <p>contact us info, Special thanks to yahoo finance, etc.</p>
         </footer>
+        <script type="text/javascript" src="metrics.js"></script>
     </body>
 </html>
