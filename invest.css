@@ -18,8 +18,7 @@
     background: #1a6377;
 }
 .top{
-    background-image: url("impicture.png");
-    background-size: cover;
+    margin: 3px;
 }
 .main{
     margin: 2px;
@@ -30,17 +29,21 @@
 .left{
     float: left;
     border: 2px solid #1a6377;
-    display: inline;
+    display: flex;
+    margin: 10px;
 }
 .right{
     float: right;
-    display: block;
-    border: 2px solid #1a6377;    
+    display: flex;
+    border: 2px solid #1a6377;  
+    margin: 10px;
+    flex-wrap: wrap;
 }
 #metricTable{
     border: 3px solid #1a6377;
     padding: 2px;
     margin: 2px;
+    justify-content: center;
 }
 #tableTitle{
     border: 5px solid #1a6377;
@@ -48,13 +51,45 @@
 }
 footer{
     display: inline;
-    background: #1a6377;
-    color: antiqeWhite;
-    
+    background: #eff1f2;
+    color: darkslategray;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 10px;
+    border: 5px solid #1a6377;
+    padding-left: 25px;
+    padding-bottom: 30px;
 }
 #search{
     padding-left:3rem;
     padding-right:3rem;
     margin: 10px;
     border: 5px solid #1a6377;
+}
+#facebook{
+    border: 3px solid grey;
+    padding: 5px;
+    margin: 4px;
+    display: flex;
+    flex-wrap: flex;
+    float: right;
+    position: relative;
+    bottom: 65px;
+    left: 50px;
+}
+#twitter{
+    border: 3px solid grey; 
+    padding: 5px;
+    margin: 4px;
+}
+#ad{
+    border: 3px solid grey;
+    padding: 5pt;
+    margin: 4px;
+}
+#newsFeed{
+    border: 3px solid grey;
+    padding: 5pt;
+    margin: 4px; 
 }

@@ -7,13 +7,40 @@
         <title>InvestingMetrics</title>
         <meta name="description" content="An investing website">
         <link rel="stylesheet" href="invest.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
             <!-- create this -->
     </head>
     <body>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1344396045626416";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+              window.fbAsyncInit = function() {
+                FB.init({
+                  appId      : '1344396045626416',
+                  xfbml      : true,
+                  version    : 'v2.8'
+                });
+                FB.AppEvents.logPageView();
+              };
+
+              (function(d, s, id){
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) {return;}
+                 js = d.createElement(s); js.id = id;
+                 js.src = "//connect.facebook.net/en_US/sdk.js";
+                 fjs.parentNode.insertBefore(js, fjs);
+               }(document, 'script', 'facebook-jssdk'));
+        </script>
         <header>
             <div class = "top">
                 <div id = "title">
-                    <!-- for title+picture -->
+                  <img src = "impicture.png" width = 100% alt = "InvestingMetrics"/>
                 </div>
                 <div id = "logo">
                     <!-- for logo -->
@@ -28,20 +55,35 @@
                 <a href = "index.html">Home</a>
                 <a href = "about.html">About</a>
                 <a href = "preferences.html">Preferences</a>
-                <a id = "loginout" href = "loginout.php">Login/Logout</a>
+                <a id = "loginout" href = "login.html">Login</a>
             </nav>
         </div>
         </header>
         <main class = "main">
             <div id = "search">
-                   <p><label for="search">Input 1-5 NYSE stock tickers:</label> <input type="text" name = "search" size="50">
-                       <input type="submit" value = "Search"></p> <!-- for search bar/button -->
+                <script>
+                  (function() {
+                    var cx = '007378197279746476069:waq9p0lcgmw';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+                <input type = "button" value = "Search" name = "box">
+                <gcse:searchbox></gcse:searchbox><!-- for search bar/button -->
+                <div id = "facebook">
+<div class="fb-like" data-href="https://www.facebook.com/Investing-Metrics-282314585526093/?fref=hovercard" data-width="100" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                </div>
             </div>
             <div class = "left">
                 <div id = "newsFeed">
                     <!-- for News Feed -->
                    <p>The news feed and all results will go here.</p>
                     <p> It will show the top results for your stocks.</p>
+                    <gcse:searchresults></gcse:searchresults>
                 </div>
                 <div id = "finance">
                     <!-- for Finance Metrics -->
@@ -242,27 +284,15 @@
                 </div>
             </div>
             <aside class = "right">
-                <div id = "facebook">
-                    <!-- for Facebook Like -->
-                    <p>Facebook Like</p>
-                    <p>Button Here</p>
-                </div>
                 <div id = "twitter">
                     <!-- for Twitter Feed -->
-                    <p>This is for the Twitter Feed</p>
-                    <p>This is for the Twitter Feed</p>
-                    <p>This is for the Twitter Feed</p>
-                    <p>This is for the Twitter Feed</p>
-                    <p>This is for the Twitter Feed</p>
-                    <p>This is for the Twitter Feed</p>
-                    <p>This is for the Twitter Feed</p>
-                </div>
-                <div id = "ad">
-                    <p>AD SPACE???</p>
-                    <p>AD SPACE???</p>
-                    <p>AD SPACE???</p>
-                    <p>AD SPACE???</p>
-                    <p>AD SPACE???</p>
+                    <a class="twitter-timeline"  href="https://twitter.com/search?q=google" data-widget-id="854781097057673218">Tweets about </a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <script>                   /* event listener */
+                        document.getElementsByName("box").addEventListener('click', doThing);
+                        function doThing(){
+                        alert('Horray! Someone wrote "' + this.value);}
+                     </script>
                 </div>
             </aside>        
         </main>
