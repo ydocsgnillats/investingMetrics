@@ -1,130 +1,128 @@
-    <!DOCTYPE html>
-    <html>
-     
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>InvestingMetrics</title>
-      <meta name="description" content="An investing website">
-      <link rel="stylesheet" href="invest.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-      <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-    </head>
-    <body>
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1344396045626416";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-      <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1344396045626416',
-          xfbml      : true,
-          version    : 'v2.8'
-        });
-        FB.AppEvents.logPageView();
-      };
-     
-      (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <header>
-      <div class = "top">
-        <div id = "title">
-          <img src = "impicture.png" width = 100% alt = "InvestingMetrics"/>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>InvestingMetrics</title>
+          <meta name="description" content="An investing website">
+          <link rel="stylesheet" href="invest.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+          <script
+              src="https://code.jquery.com/jquery-3.2.1.min.js"
+              integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+              crossorigin="anonymous">
+          </script>
+        </head>
+        <body>
+        <header>
+          <div class = "jumbotron" id = "top">
+              <img src = "investingMetrics.jpeg" width = 100% alt = "InvestingMetrics"/>
+          </div>
+          <div class = "navcon">
+                <ul class = "nav nav-pills">
+                    <li role = "presentation" class = "active"><a href = "index.html">Home</a></li>
+                    <li role = "presentation"><a href = "about.html">About</a></li>
+                    <li role = "presentation"><a href = "preferences.html">Preferences</a></li>
+                    <li role = "presentation"><a id = "loginout" href = "login.html">Login</a></li>
+                </ul>
+              <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1344396045626416";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+          </script>
+          <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '1344396045626416',
+            xfbml      : true,
+            version    : 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+          };
+
+          (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+          </div>
+        </header>
+        <main id = "main">
+        <div  class = "container">
+        <div class = "row">
+          <div class = "col-sm-8 text-left" id = "search">
+            <script>
+            (function() {
+              var cx = '007378197279746476069:waq9p0lcgmw';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+            </script>
+            <gcse:searchbox></gcse:searchbox><!-- for search bar/button -->
+            <div class = "col-sm-4 text-right" id = "facebook">
+                <div class="fb-like" data-href="https://www.facebook.com/Investing-Metrics-282314585526093/?fref=hovercard" data-width="100" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                </div>
+            </div>
+                </div>
+          </div>
         </div>
-        <div id = "logo">
-          <!-- for logo -->
-        </div>
-        <div id = "dateTime">
-          <!-- for date/time -->
-        </div>
-      </div>
-      <div class = "navcon">
-        <nav class = "nav">
-          <!-- This will be for links to other site pages (home, preferences, about, login/logout) -->
-          <a href = "index.html">Home</a>
-          <a href = "about.html">About</a>
-          <a href = "preferences.html">Preferences</a>
-          <a id = "loginout" href = "login.html">Login</a>
-        </nav>
-      </div>
-    </header>
-    <main class = "main">
-      <div id = "search">
-        <script>
-        (function() {
-          var cx = '007378197279746476069:waq9p0lcgmw';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
-      <gcse:searchbox></gcse:searchbox><!-- for search bar/button -->
-      <div id = "facebook">
-        <div class="fb-like" data-href="https://www.facebook.com/Investing-Metrics-282314585526093/?fref=hovercard" data-width="100" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-      </div>
-    </div>
-    <div class = "left">
-      <div id = "newsFeed">
-        <!-- for News Feed -->
-        <p>The news feed and all results will go here.</p>
-        <p> It will show the top results for your stocks.</p>
-        <gcse:searchresults></gcse:searchresults>
-      </div>
-      <div id = "finance">
+            <div class = "row">
+          <div class = "col-sm-4" id = "left">
+            <gcse:searchresults></gcse:searchresults>
+          </div>
+          <div class = "col-sm-4" id = "middle">
         <div id="results">
         </div>
-      </div>
-    </div>
-    <aside class = "right">
-      <div id = "twitter">
-        <!-- for Twitter Feed -->
-        <a class="twitter-timeline"  href="https://twitter.com/search?q=google" data-widget-id="854781097057673218">Tweets about </a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </aside>
-    </main>
-    <footer>
-      <p>contact us info, Special thanks to yahoo finance, etc.</p>
-    </footer>
-    <script type="text/javascript" src="metrics.js"></script>
-    <script>
-    function getYahooStock() {
-      var symbol = $('input[id=gsc-i-id1]').val();
-      var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20Name,Ask,Bid,DaysLow,DaysHigh,YearLow,YearHigh,MarketCapitalization,AverageDailyVolume%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + symbol + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
-     
-      $.getJSON(url, function(data) {
-        var items = [];
-        $('#results').html('');
-        $.each(data.query.results.quote, function(key, val) {
-          items.push('<li>' + key + ': ' + val + '</li>');
-     
-        });
-        $('<ul/>', { 'class': 'my-new-list', html: items.join('')}).appendTo('#results');
-      });
-    };
-     
-    function doThis(){
-      searchTerm = document.getElementById('gsc-i-id1').value;
-      getYahooStock();
-    }
-    window.setInterval(doThis,2500);
-    </script>
-    </body>
-    </html>
+          </div>
+        <aside class = "col-sm-4" id = "right">
+          <div id = "twitter">
+            <!-- for Twitter Feed -->
+              <a class="twitter-timeline" data-width="300" data-height="600" data-theme="dark" href="https://twitter.com/JustCSThings/lists/investingmetrics">A Twitter List by Investing Metrics</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </aside>
+            </div>
+        </main>
+            <div class = "container">
+                <div class = "row">
+        <footer class = "col-sm-12" id = "footer">
+          <p> &copy; 2017 Investing Metrics</p>
+        </footer>
+            </div>
+                </div>
+                                 <script>
+        function getYahooStock() {
+          var symbol = $('input[id=gsc-i-id1]').val();
+          var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20Name,Ask,Bid,DaysLow,DaysHigh,YearLow,YearHigh,MarketCapitalization,AverageDailyVolume%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + symbol + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
+
+          $.getJSON(url, function(data) {
+            var items = [];
+            $('#results').html('');
+            $.each(data.query.results.quote, function(key, val) {
+              items.push('<li>' + key + ': ' + val + '</li>');
+
+            });
+            $('<ul/>', { 'class': 'my-new-list', html: items.join('')}).appendTo('#results');
+          });
+        };
+
+        function doThis(){
+          searchTerm = document.getElementById('gsc-i-id1').value;
+          getYahooStock();
+        }
+        window.setInterval(doThis,2500);
+        </script>
+        </body>
+        </html>

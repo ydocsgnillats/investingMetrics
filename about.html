@@ -1,36 +1,59 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>About-InvestingMetrics</title>
-        <meta name="description" content="An investing website">
-        <link rel="stylesheet" href="invest.css">
-            <!-- create this -->
-    </head>
-    <body>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>InvestingMetrics</title>
+          <meta name="description" content="An investing website">
+          <link rel="stylesheet" href="invest.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+          <script
+              src="https://code.jquery.com/jquery-3.2.1.min.js"
+              integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+              crossorigin="anonymous">
+          </script>
+        </head>
+        <body>
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1344396045626416";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+          </script>
+          <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '1344396045626416',
+            xfbml      : true,
+            version    : 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+          };
+
+          (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
         <header>
-            <div>
-                <section>
-                    <!-- for title+picture -->
-                </section>
-                <section>
-                    <!-- for logo -->
-                </section>
-                <section>
-                    <!-- for date/time -->
-                </section>
-            </div>
-            <nav>
-                <!-- This will be for links to other site pages (home, preferences, about, login/logout) -->
-            </nav>
+          <div class = "jumbotron" id = "top">
+              <img src = "investingMetrics.jpeg" width = 100% alt = "InvestingMetrics"/>
+          </div>
+          <div class = "navcon">
+                <ul class = "nav nav-pills">
+                    <li role = "presentation" class = "active"><a href = "index.html">Home</a></li>
+                    <li role = "presentation"><a href = "about.html">About</a></li>
+                    <li role = "presentation"><a href = "preferences.html">Preferences</a></li>
+                    <li role = "presentation"><a id = "loginout" href = "login.html">Login</a></li>
+                </ul>
+          </div>
         </header>
-        <main>
-  
-        </main>
-        <footer>
-            <!-- contact us info, Special thanks to yahoo finance, etc.-->
-        </footer>
-    </body>
+        </body>
 </html>
