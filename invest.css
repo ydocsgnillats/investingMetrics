@@ -2,66 +2,76 @@
     background: #f7f7f7;
  }
 .navcon{
-    background: #1a6377;
-    border: 2px solid #3e69ad;
+    background: #393d39;
     padding: 1px;
+    color: white;
 }
 .nav{
-    background: #1a6377;
+    background: #393d39;
     padding: 0px;
     margin-bottom: 2em;
+    color: white;
 }
 .nav a{
     border: 1px solid #FFF;
-    color: grey;
-    background: #1a6377;
+    color: white;
+    background: #393d39;
 }
 #top{
     margin: 3px;
     }
 #main{
-    margin: 2px;
+    border: 2px solid #393d39;
 }
 #loginout {
     float: right;
 }
 #left{
-    border: 2px solid #1a6377;
+    border: 3px solid #393d39;
 }
-#right{
-    border: 2px solid #1a6377;  
+#right{ 
     margin-top: 2em;    
-    margin-left: 2em;
+    margin-left: 4rem;
+    border: 3px solid #393d39;
 }
 #middle{
-    border: 3px solid #1a6377;
+    border: 3px solid #393d39;
     padding: 2px;
-    margin-left: 2em;
+    margin-left: 4rem;
 }
 #tableTitle{
-    border: 5px solid #1a6377;
-    padding 4px;
+    border: 5px solid #393d39;
 }
 #footer{
     background: #eff1f2;
     color: darkslategray;
     width:100%;
-    border: 5px solid #1a6377;
+    border: 5px solid #393d39;
 }
 #search{
     padding: 5px;
-    border: 5px solid #1a6377;
+    border: 3px solid #393d39;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 #facebook{
-    border: 3px solid #1a6377;
+    border: 3px solid #393d39;
     padding: 2px;
+    padding-right: 2px;
+    margin-left: 3rem;
 }
 #results{
-    border: 1px solid grey;
     margin-left: 2em;
 }
 #ad{
     border: 3px solid grey;
     padding: 5pt;
     margin: 4px;
+}
+div{
+    
+}
+#about{
+    border: 3px solid #393d39;
+    margin-top: 5rem;
 }
