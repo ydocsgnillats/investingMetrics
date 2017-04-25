@@ -1,5 +1,5 @@
 *{
-    background: #eff1f2;
+    background: #f7f7f7;
  }
 .navcon{
     background: #1a6377;
@@ -9,16 +9,15 @@
 .nav{
     background: #1a6377;
     padding: 0px;
+    margin-bottom: 2em;
 }
 .nav a{
     border: 1px solid #FFF;
-    color: antiquewhite;
-    margin-left: 1rem;
+    color: grey;
     background: #1a6377;
 }
 #top{
     margin: 3px;
-    padding: 1;
     }
 #main{
     margin: 2px;
@@ -28,16 +27,16 @@
 }
 #left{
     border: 2px solid #1a6377;
-    margin: 10px;
 }
 #right{
     border: 2px solid #1a6377;  
-    margin: 10px;
+    margin-top: 2em;    
+    margin-left: 2em;
 }
 #middle{
     border: 3px solid #1a6377;
     padding: 2px;
-    margin: 2px;
+    margin-left: 2em;
 }
 #tableTitle{
     border: 5px solid #1a6377;
@@ -50,19 +49,16 @@
     border: 5px solid #1a6377;
 }
 #search{
-    padding-left:3rem;
-    padding-right:20rem;
-    margin-right: 50px;
+    padding: 5px;
     border: 5px solid #1a6377;
 }
 #facebook{
-    border: 3px solid grey;
-
+    border: 3px solid #1a6377;
+    padding: 2px;
 }
-#twitter{
-    border: 3px solid grey; 
-    padding: 5px;
-    margin: 4px;
+#results{
+    border: 1px solid grey;
+    margin-left: 2em;
 }
 #ad{
     border: 3px solid grey;
